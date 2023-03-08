@@ -4,16 +4,53 @@
     height: 50px;
     display: flex;
     align-items: center;
-    .order {
+    .header__order {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        .header__heart {
+        justify-content: end;
+        .header__favourite {
+            padding: 15px 26px;
+            border-right: 2px solid grey;
         }
-        .header__basket {
-            .header__btn {
-                background: none;
-                border: none;
+        .header__favourite-btn {
+            background: none;
+            border: none;
+            position: relative;
+            .favourite__amount {
+                position: absolute;
+                top: -9px;
+                right: -2px;
+                font-family: "Roboto";
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 12px;
+                text-align: center;
+                background: #ba0000;
+                border-radius: 16px;
+                color: #ffffff;
+                padding: 2px 4px;
+            }
+        }
+    }
+    .header__basket {
+        padding: 15px 26px;
+        .header__basket-btn {
+            background: none;
+            border: none;
+            position: relative;
+            .card__amount {
+                top: -6px;
+                right: 0;
+                position: absolute;
+                font-family: "Roboto";
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 12px;
+                text-align: center;
+                background: #ba0000;
+                border-radius: 16px;
+                color: #ffffff;
+                padding: 2px 4px;
             }
         }
     }
