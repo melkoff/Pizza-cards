@@ -35,3 +35,21 @@ window.addEventListener('click', function (event) {
 
   }
 });
+
+/**basket */
+let basketModal = document.getElementById("basket-modal");
+let btnBasket = document.getElementById("shop-btn");
+let closeBasket = document.getElementsByClassName("basket-close")[0];
+btnBasket.onclick = function () {
+  basketModal.style.display = "block";
+}
+
+closeBasket.onclick = function () {
+  basketModal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == basketModal) {
+    basketModal.style.display = "none";
+  }
+}

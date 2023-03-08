@@ -53,5 +53,18 @@
                 padding: 2px 4px;
             }
         }
+
+        .basket__modal{
+            display: none;
+            .modal__open{
+                width: 100px;
+                height: 100px;
+                background-color: #f16b6b;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+          
+        }
     }
 }
