@@ -1,0 +1,160 @@
+.pizza {
+   h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 40px;
+   }
+   .container__top,
+   .container__center,
+   .container__bottom {
+      display: flex;
+      justify-content: space-between;
+      .pizza__body {
+         padding: 30px 20px;
+         background-color: #fff;
+         width: 100%;
+         max-width: 416px;
+         height: 100%;
+         max-height: 582px;
+         .pizza__card {
+            border-bottom: 1px solid #6b6969;
+            padding: 0 0 28px 0;
+            .pizza__items {
+               display: flex;
+               justify-content: space-between;
+               .pizza__describe {
+                  p {
+                     font-family: "Roboto";
+                     font-weight: 500;
+                     font-size: 20px;
+                     line-height: 23px;
+                     display: inline-flex;
+                     color: #ba0000;
+                  }
+                  span {
+                     font-family: "Roboto";
+                     font-weight: 500;
+                     font-size: 20px;
+                     line-height: 23px;
+                     display: block;
+                     color: #6b6969;
+                  }
+               }
+               .pizza__favourite {
+                  .favourite__pizza-btn {
+                     border: none;
+                     background: none;
+                  }
+               }
+            }
+            .pizza__image {
+               display: flex;
+               justify-content: center;
+               background-color: #fff;
+               img {
+                  transform: translate(0, -25px);
+               }
+            }
+            .pizza__title {
+               max-width: 375px;
+               margin: 0 auto;
+               h3 {
+                  font-family: "Montserrat";
+                  font-weight: 700;
+                  font-size: 32px;
+                  line-height: 39px;
+                  text-align: center;
+                  color: #0d0c0c;
+                  margin-bottom: 16px;
+               }
+               p {
+                  font-family: "Roboto";
+                  font-size: 20px;
+                  line-height: 23px;
+                  text-align: center;
+                  color: #6b6969;
+               }
+            }
+         }
+      }
+      .items__wrapper {
+         padding-top: 28px;
+         margin: 0 20px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         .price {
+            p {
+               font-family: "Montserrat";
+               font-weight: 700;
+               font-size: 24px;
+               line-height: 29px;
+               text-align: center;
+               color: #ba0000;
+               span {
+                  font-family: "Montserrat";
+                  font-weight: 500;
+                  font-size: 24px;
+                  line-height: 29px;
+                  text-align: center;
+                  color: #000000;
+               }
+            }
+         }
+         .items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 86px;
+            .items__control {
+               font-family: "Montserrat";
+               font-weight: 300;
+               font-size: 32px;
+               line-height: 39px;
+               text-align: center;
+               color: #000000;
+               width: 100%;
+               cursor: pointer;
+            }
+            .items__current {
+               font-family: "Montserrat";
+               font-style: normal;
+               font-weight: 700;
+               font-size: 16px;
+               line-height: 20px;
+               display: flex;
+               align-items: center;
+               text-align: center;
+               color: #000000;
+               padding: 6px 12px;
+               border: 1px solid #000000;
+               border-radius: 10px;
+            }
+         }
+         .btn {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            background-color: #ba0000;
+            border: none;
+            padding: 7px 14px 7px 20px;
+            border-radius: 8px;
+         }
+      }
+   }
+}

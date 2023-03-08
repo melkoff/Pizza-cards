@@ -1,4 +1,20 @@
-.header{
-    background-color: red;
+.header {
+    background-color: rgb(0, 0, 0);
     color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    .order {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header__heart {
+        }
+        .header__basket {
+            .header__btn {
+                background: none;
+                border: none;
+            }
+        }
+    }
 }
