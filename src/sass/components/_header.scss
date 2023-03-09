@@ -71,24 +71,40 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 100;
-                .modal__cards {
+                .modal__cards,
+                .cart-wrapper {
                     background-color: #fff;
                     width: 100%;
                     min-height: 100%;
-                    .pizza__modal {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    flex-wrap: wrap;
+                    .pizza__modal,
+                    .pizza__body {
                         display: flex;
                         align-items: center;
-                        .pizza__card-modal {
+                        justify-content: center;
+                        flex-direction: column;
+                        .pizza__card-modal,
+                        .pizza__card {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
 
-                            .pizza__title-modal {
+                            .pizza__title-modal,
+                            .pizza__title {
+                                padding: 10px 0;
+                                text-align: center;
                                 h3 {
+                                    padding: 10px 0;
+                                    text-align: center;
                                 }
                             }
 
-                            .pizza__image-modal {
+                            .pizza__image-modal,
+                            .pizza__image {
                                 max-width: 100px;
                                 max-height: 100px;
                                 img {
@@ -97,22 +113,34 @@
                                 }
                             }
                         }
-                        .items__wrapper-modal {
-                            .price-modal {
+                        .items__wrapper-modal,
+                        .items__wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 10px 0;
+                            gap: 10px;
+                            .price-modal,
+                            .price {
                                 p {
+                                    font-size: 16px;
                                     span {
                                     }
                                 }
                             }
-                            .counter-pizza-modal {
+                            .counter-pizza-modal,
+                            .counter-pizza {
                                 display: flex;
-                                justify-content: space-evenly;
-                                padding-left: 20px;
-                                .items__control-modal {
+
+                                .items__control-modal,
+                                .items__control {
                                     font-size: 26px;
+                                    cursor: pointer;
                                 }
-                                .items__current-modal {
+                                .items__current-modal,
+                                .items__current {
                                     font-size: 26px;
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -150,6 +178,12 @@
                         &::after {
                             transform: rotate(-45deg);
                         }
+                    }
+                    #cart {
+                        // display: flex;
+                        // flex-direction: column;
+                        // margin: 0 auto;
+                        width: 50%;
                     }
                 }
             }

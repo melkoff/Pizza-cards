@@ -62,7 +62,7 @@ window.addEventListener('click', function (event) {
       </div>
       <div class="items__wrapper">
           <div class="price">
-              <p>${productInfo.price}<span>грн</span></p>
+              <p>${productInfo.price}<span></span></p>
           </div>
           <div class="items counter-pizza">
               <div class="items__control" data-action="minus">-</div>
