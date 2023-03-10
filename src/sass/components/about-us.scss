@@ -1,29 +1,80 @@
-.about-us{
-  &__more{
+.about-us {
+  background-color: #FFF8F8;
+
+  &__more {
     margin-bottom: 176px;
-    &_title{
-        h2{
-            text-transform: uppercase;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            color: #BA0000;
-            padding-bottom: 25px;
-            line-height: 1;
-            text-align: center;
-        }
+
+    &_title {
+      h2 {
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #BA0000;
+        padding-bottom: 25px;
+        line-height: 1;
+        text-align: center;
+      }
     }
-    &_descript{
-        p{
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
-            letter-spacing: -0.035em;
-            text-align: center;
-        }
+
+    &_descript {
+      p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.035em;
+        text-align: center;
+      }
+    }
+  }
+
+  &__slider {
+    .container__slider {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .swiper {
+        padding-bottom: 120px;
+
+        .swiper-wrapper {}
+      }
+
+      .swiper-button-next {
+        top: 92.4%;
+        color: #fff;
+        right: 34%;
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      .swiper-button-prev {
+        top: 92.4%;
+        color: #fff;
+        left: 37%;
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      .swiper-pagination {
+        top: 90%;
+      }
+
+      .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        background: #999999;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 16px;
+        width: 16px;
+        background: #7B61FF;
+    }
+
     }
   }
 }
