@@ -49,8 +49,8 @@ window.addEventListener('click', function (event) {
 
 
          // Збираємо дані в корзину //
-         const cartItemHTML = `<div class="pizza__body" data-id="${productInfo.id}">
-      <div class="pizza__card">
+         const cartItemHTML = `<div class="cart-wrapper" data-id="${productInfo.id}">
+      <div class="cart-wrapper">
           <div class="pizza__title">
               <h3>
                   ${productInfo.title}
@@ -76,9 +76,12 @@ window.addEventListener('click', function (event) {
          // Відображаємо товар в корзині //
          cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
       }
-
+      // Скидаємо рахунок на//
       card.querySelector('[data-counter]').innerText = '1';
 
    }
 
 });
+
+
+

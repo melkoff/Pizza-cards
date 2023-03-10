@@ -59,7 +59,7 @@
             position: relative;
             .modal__open {
                 position: fixed;
-                width: 50%;
+                max-width: 100%;
                 min-height: 50%;
                 background-color: #ffffff;
                 border-radius: 25px;
@@ -70,32 +70,26 @@
                 transform: translate(-50%, -50%);
                 z-index: 100;
 
-                .modal__cards,
-                .cart-wrapper {
+                .modal__cards {
                     background-color: #fff;
-                    width: 100%;
-                    min-height: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    column-gap: 80px;
 
-                    .pizza__modal,
-                    .pizza__body {
+                    display: flex;
+                    justify-content: start;
+                    flex-wrap: wrap;
+
+                    .cart-wrapper {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         flex-direction: column;
+                        width: 200px;
                         .pizza__card-modal,
-                        .pizza__card {
+                        .cart-wrapper {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
 
-                            .pizza__title-modal,
-                            .pizza__title {
+                            .pizza__title-modal {
                                 padding: 10px 0;
                                 text-align: center;
                                 h3 {
@@ -103,8 +97,6 @@
                                     text-align: center;
                                 }
                             }
-
-                            .pizza__image-modal,
                             .pizza__image {
                                 max-width: 100px;
                                 max-height: 100px;
@@ -114,33 +106,32 @@
                                 }
                             }
                         }
-                        .items__wrapper-modal,
-                        .items__wrapper {
+                        .items__wrapper,
+                        .cart-wrapper {
                             display: flex;
-                            flex-direction: column;
+
                             align-items: center;
                             padding: 10px 0;
                             gap: 10px;
-                            .price-modal,
                             .price {
+                                order: 1;
                                 p {
-                                    font-size: 16px;
+                                    font-size: 20px;
                                     span {
                                     }
                                 }
                             }
-                            .counter-pizza-modal,
                             .counter-pizza {
                                 display: flex;
+                                justify-content: space-between;
 
-                                .items__control-modal,
                                 .items__control {
-                                    font-size: 26px;
+                                    font-size: 20px;
                                     cursor: pointer;
                                 }
-                                .items__current-modal,
                                 .items__current {
-                                    font-size: 26px;
+                                    font-size: 20px;
+                                    padding: 0 5px;
                                     cursor: pointer;
                                 }
                             }
