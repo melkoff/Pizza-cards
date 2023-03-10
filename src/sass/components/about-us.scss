@@ -1,5 +1,8 @@
 .about-us {
   background-color: #FFF8F8;
+  &__container{
+    padding: 0 120px;
+  }
 
   &__more {
     margin-bottom: 176px;
@@ -40,8 +43,8 @@
       .swiper {
         padding-bottom: 120px;
 
-        .swiper-wrapper {}
-      }
+      //   .swiper-wrapper {}
+      // }
 
       .swiper-button-next {
         top: 92.4%;
@@ -77,4 +80,5 @@
 
     }
   }
+}
 }

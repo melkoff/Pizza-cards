@@ -145,22 +145,8 @@
 /////////////////////////////////////////
 
 
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 5,
+let swiper = new Swiper(".swiper", {
+  slidesPerView: 2,
   spaceBetween: 20,
   effect: "coverflow",
   centeredSlides: true,
