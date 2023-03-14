@@ -2,96 +2,112 @@
     background-color: #101010;
     padding-top: 100px;
 
-    &__content {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 84px;
+    &__logo{
+        img{
+            max-width: 128px;
+            max-height: 82px;
+            width: 100%;
+        }
+        @media screen  and (max-width: 991px){
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+    }
 
-        &_logo{
-            @media screen  and (max-width: 991px){
-                display: flex;
-                justify-content: center;
-                padding-bottom: 50px;
-            }
+    &__choose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            color: #BA0000;
+            text-transform: uppercase;
         }
 
-        &_choose {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        ul {
+            list-style: none;
 
-            h2 {
-                text-align: center;
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-                font-size: 24px;
-                color: #BA0000;
-                text-transform: uppercase;
-            }
+            li {
+                padding-top: 22px;
 
-            ul {
-                list-style: none;
-
-                li {
-                    padding-top: 22px;
-
-                    a {
-                        text-decoration: none;
-                        font-size: 20px;
-                        color: #FFFEFE;
-                    }
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #FFFEFE;
                 }
             }
-
         }
 
-        &_contact {
-            @media screen and (max-width: 575px) {
-                padding-top: 50px;
-            }
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    }
 
-            h2 {
-                text-align: center;
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-                font-size: 24px;
-                color: #BA0000;
-                text-transform: uppercase;
-                padding-bottom: 22px;
-            }
+    &__contact {
+        @media screen and (max-width: 575px) {
+            padding-top: 50px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 26px;
 
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                color: #FFFEFE;
-            }
+        h2 {
+            text-align: center;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            color: #BA0000;
+            text-transform: uppercase;
+            padding-bottom: 22px;
         }
 
-        &_subscribe {
-            @media screen and (max-width: 767px) {
-                padding-top: 50px;
-            }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFEFE;
+        }
+    }
+    &__workTime{
+        h2{
+        text-align: center;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 24px;
+        color: #BA0000;
+        text-transform: uppercase;
+        }
+        p{
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFEFE;
+            text-align: center;
+        }
+    }
+
+    &__subscribe {
+        @media screen and (max-width: 767px) {
+            padding-top: 50px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            color: #BA0000;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+        }
+
+        .subscribe__link {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            h2 {
-                text-align: center;
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-                font-size: 24px;
-                color: #BA0000;
-                text-transform: uppercase;
-                padding-bottom: 22px;
-            }
-
-            .subscribe__link {
-                display: flex;
-                gap: 16px;
-            }
+            gap: 16px;
         }
     }
 
